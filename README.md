@@ -12,7 +12,7 @@ Online material for the paper "Performance-based pay and limited information acc
 The provided content consists of two parts: First, the code of the agent-based simulation model and, second, the data that is generated using the model and analyzed in the manuscript. 
 
 # Summary
-This agent-based simulation model aims to analyze the effects of limited intelligence (in the sense of limitations in memory) in Holmström's hidden action model 
+This agent-based simulation model aims to analyze the effects of limited information access (and limited memory) in Holmström's hidden action model 
 - on the principal’s and the agent’s respective utilities, 
 - the effort (action) the agent makes to perform a task, and 
 - the premium parameter in the rule to share the outcome between the principal and the agent.
@@ -34,7 +34,7 @@ In addition, the following packages are required to run the model:
 - As soon as the import is finished close the program.
 - The whole project should now be at Documents/Git-GUI/ProjectName (e.g. Documents/GitHub/ProjectSarah).
 # Running the model
-Open the folder "ProjectSarah" >> "Model" >> "agentization". Find and double-click the file main.m. The MATLAB editor opens, and you can change the simulation parameters.
+Open the folder "JES" >> "Model" >> "agentization". Find and double-click the file main.m. The MATLAB editor opens, and you can change the simulation parameters.
 
 To run the model, you can either:
 - Type the script name (main) in the command line and press enter
@@ -46,7 +46,7 @@ You can set all relevant parameters in the file main.m
 - umwSD: This is the standard deviation of the normal distribution from which the environmental variable is drawn. It is defined relative (in %) to the optimal outcome. We set it to either 5, 25, or 45.
 - jto: This is the number of simulation runs. We set it to 700 in all scenarios. You are free to change it to any number. However, please note that performing many simulation runs might take a long time.
 - limitedMemoryP: This parameter defines whether the principal’s memory is limited or not. The variable can be set to either true or false. If set to false, the principal’s memory is unlimited and changes in the variable "memoryP" have no effects.
-- limitedMemoryA: This parameter defines whether the principal’s memory is limited or not. The variable can be set to either true or false. If set to false, the agent’s memory is unlimited and changes in the variable "memoryA" have no effects.
+- limitedMemoryA: This parameter defines whether the agent’s memory is limited or not. The variable can be set to either true or false. If set to false, the agent’s memory is unlimited and changes in the variable "memoryA" have no effects.
 - memoryP: This variable defines the length of the principal’s memory (in periods). We set it either to 1, 3, or 5. 
 - memoryA: This variable defines the length of the agent’s memory (in periods). We set it either to 1, 3, or 5. 
 
