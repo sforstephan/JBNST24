@@ -3,7 +3,6 @@ Online material for the paper "Performance-based pay and limited information acc
 - [Content](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#content)
 - [Summary](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#summary)
 - [Requirements](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#requirements)
-- [Cloning the model](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#cloning-the-model)
 - [Running the model](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#running-the-model)
 - [Model output](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#model-output)
 - [Explanation of the structure of the datasets](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#explanation-of-the-structure-of-the-datasets)
@@ -25,16 +24,9 @@ In addition, the following packages are required to run the model:
 - Optimization Toolbox
 - Global Optimization Toolbox
 - Statistics and Machine Learning Toolbox
-# Cloning the model
-- Install a Git-GUI on your computer (e.g. [GitHub Desktop](https://desktop.github.com/)).
-- Start the Programm and make an account.
-- Go back to GitFront and click on the "clone"-button on the top right side.
-- Copy the link and go back to your Git-GUI.
-- Import or "clone" a repository from the internet.
-- As soon as the import is finished close the program.
-- The whole project should now be at Documents/Git-GUI/ProjectName (e.g. Documents/GitHub/ProjectSarah).
+  
 # Running the model
-Open the folder "JES" >> "Model" >> "agentization". Find and double-click the file main.m. The MATLAB editor opens, and you can change the simulation parameters.
+Open the folder "JES" >> "Model". Find and double-click the file main.m (in the folder "agentization"). The MATLAB editor opens, and you can change the simulation parameters.
 
 To run the model, you can either:
 - Type the script name (main) in the command line and press enter
@@ -53,7 +45,7 @@ You can set all relevant parameters in the file main.m
 # Model output
 The simulation model creates the folder "Results" in the project directory. This folder consists of at least one subfolder. The subfolder’s name consists, amongst others, of the values assigned to the variables umwSD (environment) and jto (number of simulation runs). This subfolder consists of two further folders named "einzelneSims" (in which only intermediate results are saved) and "final" (in which the final simulation data are saved). 
 
-# Explanation of the structure of the datasets
+# Explanation of the model output
 The datasets are provided in the folder "datasets" in this repository. The folder contains three subfolders: "relatively stable environment", "mid-turbulent environment", and "turbulent environment". In each of these folders, we provide 16 data files, each representing one scenario. Every data file contains 61 variables. However, not all of these variables are used in the analysis because some are saved for verification only. The most important variables are the following (the ones used in the study are printed in bold font):
 - **opta**: The effort level proposed by the second-best solution of Holmström’s model.
 - **a_A_sims**: This is a 700*20 matrix in our case (700 simulation runs, 20 periods). It contains information on the effort made by the agent to perform a task (in every timestep).
