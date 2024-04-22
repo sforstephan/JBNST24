@@ -1,4 +1,4 @@
-Online material for the paper "Performance-based pay and limited information access. An agent-based model of the hidden action problem"
+
 # Table of contents
 - [Content](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#content)
 - [Summary](https://gitfront.io/r/user-1726354/79d76c4cfb66419a72a8ac55cec3f5d185dab542/ProjectSarah/#summary)
